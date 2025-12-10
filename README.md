@@ -55,6 +55,7 @@ You can override any of default settings by following the structure below.
 | Option                | Description                                                                                     |
 | --------------------- | ----------------------------------------------------------------------------------------------- |
 | containerSelector     | Selector for notification container. Attribute, ID, class as `string` with `#` or `.` as needed |
+| injectCss             | `boolean` - Whether to inject built-in CSS styles. Default: `true`                              |
 | classes               | Override the default CSS classes by providing your own                                          |
 | → notificationClass   | CSS class as `string`, no prefixed `.`                                                          |
 | → headingWrapperClass | CSS class as `string`, no prefixed `.`                                                          |
@@ -69,13 +70,14 @@ You can override any of default settings by following the structure below.
 | → debug               | `string` injected as HTML                                                                       |
 | → info                | `string` injected as HTML                                                                       |
 | → spinner             | `string` injected as HTML                                                                       |
-| Theme                 | `string` light / dark / auto / none                                                             |
+| theme                 | `'light'` / `'dark'` / `'auto'` / `'none'` - Theme for built-in styles                          |
 
 #### Defaults
 
 ```typescript
-configureNotification({
+notifyUtil.configure({
   containerSelector: '[nu_notification-container]',
+  injectCss: true,
   classes: {
     notificationClass: 'nu_notification',
     headingWrapperClass: 'nu_notification-heading-wrapper',

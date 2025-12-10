@@ -3,8 +3,35 @@ import { styles } from './styles';
 import { deepMerge } from './utils/deep-merge';
 import { injectCss } from './utils/inject-css';
 
-export const config = {
+export interface ConfigClasses {
+  notificationClass: string;
+  headingWrapperClass: string;
+  iconClass: string;
+  headingClass: string;
+  bodyClass: string;
+  progressBarClass: string;
+}
+
+export interface ConfigIcons {
+  success: string;
+  warning: string;
+  error: string;
+  debug: string;
+  spinner: string;
+  info: string;
+}
+
+export interface Config {
+  containerSelector: string;
+  injectCss: boolean;
+  classes: ConfigClasses;
+  icons: ConfigIcons;
+  theme: 'none' | 'light' | 'dark' | 'auto';
+}
+
+export const config: Config = {
   containerSelector: '[nu_notification-container]',
+  injectCss: true,
   classes: {
     notificationClass: 'nu_notification',
     headingWrapperClass: 'nu_notification-heading-wrapper',
@@ -24,10 +51,11 @@ export const config = {
   theme: 'light'
 };
 
-export function configure(options: any) {
+export function configure(options: Partial<Config>) {
   // Apply the safeOptions to your notificationConfig
   deepMerge(config, options);
 
+  if (!config.injectCss) return;
   // Adds the appropriate styles based on the theme
   switch (config.theme) {
     case 'none':

@@ -7,7 +7,7 @@
  * If a property value is an object (excluding arrays), it will be merged into the corresponding target property.
  * Otherwise, the property value will be copied over to the target object, overwriting any existing property with the same key.
  */
-export function deepMerge(target: any, source: any) {
+export function deepMerge<T>(target: T, source: Partial<T>): void {
   Object.keys(source).forEach((key) => {
     if (
       source[key] &&

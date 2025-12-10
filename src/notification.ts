@@ -22,7 +22,7 @@ import { updateNotification } from './notifications/update-notification';
 export class Notification {
   private element: HTMLElement | null = null;
 
-  type: string;
+  type: 'success' | 'warning' | 'error' | 'debug' | 'info' | 'spinner';
   heading: string;
   body: string;
   duration: number;

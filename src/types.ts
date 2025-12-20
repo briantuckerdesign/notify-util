@@ -1,5 +1,5 @@
 /**
- * Core type definitions for just-toast
+ * Core type definitions for tinytoast
  */
 
 export type ToastType =

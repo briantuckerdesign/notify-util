@@ -1,5 +1,5 @@
 {
-  "name": "just-toast",
+  "name": "tinytoast",
   "version": "1.0.0",
   "description": "Lightweight, accessible toast notifications with zero dependencies",
   "keywords": [
@@ -12,18 +12,18 @@
     "typescript"
   ],
   "license": "MIT",
-  "main": "./dist/just-toast.cjs.js",
-  "module": "./dist/just-toast.esm.js",
-  "browser": "./dist/just-toast.iife.js",
+  "main": "./dist/tinytoast.cjs.js",
+  "module": "./dist/tinytoast.esm.js",
+  "browser": "./dist/tinytoast.iife.js",
   "types": "./dist/types/main.d.ts",
   "type": "module",
   "exports": {
     ".": {
       "types": "./dist/types/main.d.ts",
-      "import": "./dist/just-toast.esm.js",
-      "require": "./dist/just-toast.cjs.js",
-      "browser": "./dist/just-toast.iife.js",
-      "default": "./dist/just-toast.esm.js"
+      "import": "./dist/tinytoast.esm.js",
+      "require": "./dist/tinytoast.cjs.js",
+      "browser": "./dist/tinytoast.iife.js",
+      "default": "./dist/tinytoast.esm.js"
     }
   },
   "sideEffects": false,
@@ -34,12 +34,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/briantuckerdesign/just-toast"
+    "url": "git+https://github.com/briantuckerdesign/tinytoast"
   },
   "bugs": {
-    "url": "https://github.com/briantuckerdesign/just-toast/issues"
+    "url": "https://github.com/briantuckerdesign/tinytoast/issues"
   },
-  "homepage": "https://github.com/briantuckerdesign/just-toast#readme",
+  "homepage": "https://github.com/briantuckerdesign/tinytoast#readme",
   "author": "Brian Tucker",
   "engines": {
     "node": ">=16"

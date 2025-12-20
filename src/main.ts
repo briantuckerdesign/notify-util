@@ -1,12 +1,12 @@
 /**
- * just-toast - Lightweight, accessible toast notifications with zero dependencies
+ * tinytoast - Lightweight, accessible toast notifications with zero dependencies
  *
  * @packageDocumentation
  *
  * @example
  * Basic usage:
  * ```typescript
- * import { Toast } from 'just-toast';
+ * import { Toast } from 'tinytoast';
  *
  * new Toast({
  *   type: 'success',
@@ -18,7 +18,7 @@
  * @example
  * With configuration:
  * ```typescript
- * import { configure, Toast } from 'just-toast';
+ * import { configure, Toast } from 'tinytoast';
  *
  * configure({
  *   position: 'top-right',

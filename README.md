@@ -1,12 +1,12 @@
-# tinytoast 🍞
+# plain-toast 🍞
 
 > Lightweight, accessible toast notifications with zero dependencies
 
-[![npm version](https://img.shields.io/npm/v/tinytoast.svg)](https://www.npmjs.com/package/tinytoast)
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/tinytoast)](https://bundlephobia.com/package/tinytoast)
+[![npm version](https://img.shields.io/npm/v/plain-toast.svg)](https://www.npmjs.com/package/plain-toast)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/plain-toast)](https://bundlephobia.com/package/plain-toast)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-[Live Demo](https://tinytoast.bybrian.io/) | [GitHub](https://github.com/briantuckerdesign/tinytoast)
+[Live Demo](https://plain-toast.bybrian.io/) | [GitHub](https://github.com/briantuckerdesign/plain-toast)
 
 ## Features
 
@@ -23,16 +23,16 @@
 
 ```bash
 # npm
-npm install tinytoast
+npm install plain-toast
 
 # yarn
-yarn add tinytoast
+yarn add plain-toast
 
 # pnpm
-pnpm add tinytoast
+pnpm add plain-toast
 
 # bun
-bun add tinytoast
+bun add plain-toast
 ```
 
 ### CDN
@@ -40,17 +40,17 @@ bun add tinytoast
 ```html
 <!-- ES Module -->
 <script type="module">
-  import { Toast } from 'https://cdn.jsdelivr.net/npm/tinytoast/dist/tinytoast.esm.js';
+  import { Toast } from 'https://cdn.jsdelivr.net/npm/plain-toast/dist/plain-toast.esm.js';
 </script>
 
-<!-- IIFE (adds tinytoast to window) -->
-<script src="https://cdn.jsdelivr.net/npm/tinytoast/dist/tinytoast.iife.js"></script>
+<!-- IIFE (adds plain-toast to window) -->
+<script src="https://cdn.jsdelivr.net/npm/plain-toast/dist/plain-toast.iife.js"></script>
 ```
 
 ## Quick Start
 
 ```javascript
-import { Toast } from 'tinytoast';
+import { Toast } from 'plain-toast';
 
 // Create a success notification
 new Toast({
@@ -65,7 +65,7 @@ new Toast({
 Configure global settings that apply to all toasts:
 
 ```javascript
-import { configure } from 'tinytoast';
+import { configure } from 'plain-toast';
 
 configure({
   position: 'top-right', // 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'
@@ -275,7 +275,7 @@ toast.close();
 
 ### Built-in Themes
 
-tinytoast includes three themes:
+plain-toast includes three themes:
 
 - **light** - Light background with dark text
 - **dark** - Dark background with light text
@@ -374,7 +374,7 @@ new Toast({
 Toasts are automatically announced to screen readers. Use the utility for custom announcements:
 
 ```javascript
-import { announceToScreenReader } from 'tinytoast/utils/announce';
+import { announceToScreenReader } from 'plain-toast/utils/announce';
 
 announceToScreenReader('File uploaded successfully', 'polite');
 ```
@@ -408,7 +408,7 @@ import {
   type JTConfig,
   type Position,
   type Theme
-} from 'tinytoast';
+} from 'plain-toast';
 
 const options: ToastOptions = {
   type: 'success',

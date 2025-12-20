@@ -33,12 +33,12 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            dist/tinytoast.esm.js
-            dist/tinytoast.esm.js.map
-            dist/tinytoast.cjs.js
-            dist/tinytoast.cjs.js.map
-            dist/tinytoast.iife.js
-            dist/tinytoast.iife.js.map
+            dist/plain-toast.esm.js
+            dist/plain-toast.esm.js.map
+            dist/plain-toast.cjs.js
+            dist/plain-toast.cjs.js.map
+            dist/plain-toast.iife.js
+            dist/plain-toast.iife.js.map
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

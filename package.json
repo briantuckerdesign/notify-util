@@ -1,5 +1,5 @@
 {
-  "name": "tinytoast",
+  "name": "plain-toast",
   "version": "1.0.0",
   "description": "Lightweight, accessible toast notifications with zero dependencies",
   "keywords": [
@@ -12,18 +12,18 @@
     "typescript"
   ],
   "license": "MIT",
-  "main": "./dist/tinytoast.cjs.js",
-  "module": "./dist/tinytoast.esm.js",
-  "browser": "./dist/tinytoast.iife.js",
+  "main": "./dist/plain-toast.cjs.js",
+  "module": "./dist/plain-toast.esm.js",
+  "browser": "./dist/plain-toast.iife.js",
   "types": "./dist/types/main.d.ts",
   "type": "module",
   "exports": {
     ".": {
       "types": "./dist/types/main.d.ts",
-      "import": "./dist/tinytoast.esm.js",
-      "require": "./dist/tinytoast.cjs.js",
-      "browser": "./dist/tinytoast.iife.js",
-      "default": "./dist/tinytoast.esm.js"
+      "import": "./dist/plain-toast.esm.js",
+      "require": "./dist/plain-toast.cjs.js",
+      "browser": "./dist/plain-toast.iife.js",
+      "default": "./dist/plain-toast.esm.js"
     }
   },
   "sideEffects": false,
@@ -34,12 +34,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/briantuckerdesign/tinytoast"
+    "url": "git+https://github.com/briantuckerdesign/plain-toast"
   },
   "bugs": {
-    "url": "https://github.com/briantuckerdesign/tinytoast/issues"
+    "url": "https://github.com/briantuckerdesign/plain-toast/issues"
   },
-  "homepage": "https://github.com/briantuckerdesign/tinytoast#readme",
+  "homepage": "https://github.com/briantuckerdesign/plain-toast#readme",
   "author": "Brian Tucker",
   "engines": {
     "node": ">=16"

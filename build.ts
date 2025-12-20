@@ -33,7 +33,7 @@ const cssPlugin = {
 };
 
 async function build() {
-  console.log('🔨 Building tinytoast...\n');
+  console.log('🔨 Building plain-toast...\n');
 
   try {
     // Build ESM format
@@ -43,7 +43,7 @@ async function build() {
       outdir,
       target: 'browser',
       format: 'esm',
-      naming: 'tinytoast.esm.js',
+      naming: 'plain-toast.esm.js',
       minify: true,
       sourcemap: 'external',
       plugins: [cssPlugin]
@@ -56,7 +56,7 @@ async function build() {
       outdir,
       target: 'node',
       format: 'cjs',
-      naming: 'tinytoast.cjs.js',
+      naming: 'plain-toast.cjs.js',
       minify: true,
       sourcemap: 'external',
       plugins: [cssPlugin]
@@ -69,7 +69,7 @@ async function build() {
       outdir,
       target: 'browser',
       format: 'iife',
-      naming: 'tinytoast.iife.js',
+      naming: 'plain-toast.iife.js',
       minify: true,
       sourcemap: 'external',
       plugins: [cssPlugin]
@@ -77,9 +77,9 @@ async function build() {
 
     console.log('\n✅ Build complete!');
     console.log('\nGenerated files:');
-    console.log('  • dist/tinytoast.esm.js (ESM format)');
-    console.log('  • dist/tinytoast.cjs.js (CommonJS format)');
-    console.log('  • dist/tinytoast.iife.js (IIFE format for browsers)');
+    console.log('  • dist/plain-toast.esm.js (ESM format)');
+    console.log('  • dist/plain-toast.cjs.js (CommonJS format)');
+    console.log('  • dist/plain-toast.iife.js (IIFE format for browsers)');
     console.log('\n📝 Generating TypeScript declarations...');
 
     // Generate TypeScript declarations using tsconfig settings

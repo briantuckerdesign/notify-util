@@ -29,6 +29,9 @@ export function getIcon(type: string): string {
     case 'info':
       iconHTML = config.icons.info;
       break;
+    case 'progress':
+      iconHTML = config.icons.progress;
+      break;
   }
 
   return iconHTML;

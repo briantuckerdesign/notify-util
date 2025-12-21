@@ -1,10 +1,14 @@
-# plain-toast 🍞
+<img src="./docs-src/logo.svg" alt="plain-toast logo" width="250"/>
 
-> Lightweight, accessible toast notifications with zero dependencies
+---
+
+# plain-toast
 
 [![npm version](https://img.shields.io/npm/v/plain-toast.svg)](https://www.npmjs.com/package/plain-toast)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/plain-toast)](https://bundlephobia.com/package/plain-toast)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+> Lightweight, accessible toast notifications with zero dependencies
 
 [Live Demo](https://plain-toast.bybrian.io/) | [GitHub](https://github.com/briantuckerdesign/plain-toast)
 
